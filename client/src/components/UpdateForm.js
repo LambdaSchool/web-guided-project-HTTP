@@ -11,6 +11,7 @@ const initialItem = {
 };
 
 const UpdateForm = props => {
+  console.log("Update form component!");
   const [item, setItem] = useState(initialItem);
 
   const changeHandler = ev => {
