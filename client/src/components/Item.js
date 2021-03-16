@@ -21,9 +21,16 @@ function Item(props) {
     return <h2>Loading item data...</h2>;
   }
 
-  function handleEdit(ev, item) {
+  const handleEdit = (ev, item) => {
     ev.preventDefault();
-    props.history.push(`/item-list/${item.id}`);
+    alert(`Editing item ${item.id}`);
+    // props.history.push(`/item-list/${item.id}`);
+  }
+
+  const handleDelete = (ev, item) => {
+    ev.preventDefault();
+    alert(`Deleting item ${item.id}`);
+    // props.history.push(`/item-list/${item.id}`);
   }
 
   return (
