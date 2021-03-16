@@ -23,7 +23,7 @@ function Item(props) {
 
   const handleEdit = (ev) => {
     ev.preventDefault();
-    alert(`Editing item ${item.id}`);
+    alert("Routing to path: ", `/update-item/${item.id}`);
     props.history.push(`/update-item/${item.id}`);
 
   }
