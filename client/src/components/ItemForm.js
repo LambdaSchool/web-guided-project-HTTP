@@ -27,6 +27,7 @@ const ItemForm = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
+    // POST request here (post = create)
   };
 
   return (
