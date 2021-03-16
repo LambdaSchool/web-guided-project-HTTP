@@ -23,8 +23,9 @@ function Item(props) {
 
   const handleEdit = (ev) => {
     ev.preventDefault();
-    // alert(`Editing item ${item.id}`);
+    alert(`Editing item ${item.id}`);
     props.history.push(`/update-item/${item.id}`);
+
   }
 
   const handleDelete = (ev) => {
