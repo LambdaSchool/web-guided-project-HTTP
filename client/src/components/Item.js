@@ -21,6 +21,11 @@ function Item(props) {
     return <h2>Loading item data...</h2>;
   }
 
+  function handleEdit(ev, item) {
+    ev.preventDefault();
+    props.history.push(`/item-list/${item.id}`);
+  }
+
   return (
     <div className="item-wrapper">
       <div className="item-header">
@@ -47,10 +52,10 @@ function Item(props) {
         path="/item-list/:id/shipping"
         render={props => <ItemShipping {...props} item={item} />}
       />
-      <button className="md-button">
+      <button onClick={handleEdit} className="md-button">
         Edit
       </button>
-      <button className="md-button">
+      <button onClick={handleDelete} className="md-button">
         Delete
       </button>
     </div>
