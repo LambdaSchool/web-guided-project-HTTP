@@ -25,7 +25,6 @@ function Item(props) {
     ev.preventDefault();
     console.log("Routing to path: ", `/update-item/${item.id}`);
     props.history.push(`/update-item/${item.id}`);
-
   }
 
   const handleDelete = (ev) => {
