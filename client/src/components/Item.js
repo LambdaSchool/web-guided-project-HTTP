@@ -21,13 +21,13 @@ function Item(props) {
     return <h2>Loading item data...</h2>;
   }
 
-  const handleEdit = (ev, item) => {
+  const handleEdit = (ev) => {
     ev.preventDefault();
     alert(`Editing item ${item.id}`);
     // props.history.push(`/item-list/${item.id}`);
   }
 
-  const handleDelete = (ev, item) => {
+  const handleDelete = (ev) => {
     ev.preventDefault();
     alert(`Deleting item ${item.id}`);
     // props.history.push(`/item-list/${item.id}`);
