@@ -11,7 +11,7 @@ import UpdateForm from "./components/UpdateForm";
 import "./styles.css";
 
 const App = () => {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState();
   useEffect(() => {
     const getItems = () => {
       axios
